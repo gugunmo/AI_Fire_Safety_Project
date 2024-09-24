@@ -3,12 +3,11 @@ import cv2
 import numpy as np
 import glob
 
-model_name= 'best.xml' 
-#model_path = 'models/best.xml'
+model_path = 'models/best.xml'
 
 core = ov.Core()
 
-model = core.read_model(model=model_name)
+model = core.read_model(model=model_path)
 compiled_model = core.compile_model(model=model, device_name="CPU")
 
 input_layer = compiled_model.input(0)
