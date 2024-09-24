@@ -3,6 +3,7 @@ import utils
 import cv2
 import numpy as np
 import io
+import PIL
 from PIL import Image
 
 def play_video(video_source):
