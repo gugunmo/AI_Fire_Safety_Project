@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 import io
 import tempfile
-import gradio as gr
 from PIL import Image
 
 def play_video(video_source):
