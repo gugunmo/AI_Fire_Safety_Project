@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import glob
 
-model_path = 'best.xml' #'github/linguist/AI_Fire_Safety_Project/models/best.xml'
+model_path = 'src/models/best.xml' #'github/linguist/AI_Fire_Safety_Project/models/best.xml'
 
 core = ov.Core()
 
