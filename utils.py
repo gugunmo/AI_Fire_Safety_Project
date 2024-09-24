@@ -1,5 +1,4 @@
 import openvino as ov
-import gradio as gr
 import cv2
 import numpy as np
 import time
