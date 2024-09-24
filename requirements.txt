@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+openvino
+openvino-dev
+tensorflow
+ipywidgets
+PIL
+numpy
+gradio
