@@ -1,9 +1,6 @@
 import openvino as ov
 import cv2
 import numpy as np
-import time
-from ultralytics.utils.plotting import colors
-from IPython.display import clear_output
 import glob
 
 train_folder = 'train9'
