@@ -4,6 +4,5 @@ openvino
 openvino-dev
 tensorflow
 ipywidgets
-PIL
 numpy
 gradio
