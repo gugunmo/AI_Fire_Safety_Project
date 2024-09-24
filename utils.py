@@ -7,7 +7,7 @@ model_path = 'github/linguist/AI_Fire_Safety_Project/models/best.xml'
 
 core = ov.Core()
 
-model = core.read_model(model='best.xml'#model_path)
+model = core.read_model(model='best.xml') #model_path
 compiled_model = core.compile_model(model=model, device_name="CPU")
 
 input_layer = compiled_model.input(0)
