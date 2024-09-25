@@ -3,5 +3,6 @@ ultralytics
 openvino
 numpy==1.26.4
 moviepy==1.0.3
+opencv-python
 opencv-python-headless==4.10.0.84
 streamlit-camera-input-live==0.2.0
