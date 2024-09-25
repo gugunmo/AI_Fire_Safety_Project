@@ -2,6 +2,7 @@ import openvino as ov
 import cv2
 import numpy as np
 import glob
+from ultralytics.utils.plotting import colors
 
 model_path = './models/best.xml' #/mount/src/ai_fire_safety_project
 
