@@ -2,7 +2,6 @@ import openvino as ov
 import cv2
 import numpy as np
 import glob
-from ultralytics import colors
 
 model_path = './models/best.xml' #/mount/src/ai_fire_safety_project
 
@@ -15,18 +14,6 @@ input_layer = compiled_model.input(0)
 output_layer = compiled_model.output(0)
 
 label_map = ['fire', 'smoke']
-
-def prepare_data(image, input_layer):
-
-    input_w, input_h = input_layer.shape[2], input_layer.shape[3]
-    input_image = cv2.resize(image, (input_w,input_h))
-    input_image = cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
-    input_image = input_image/255
-
-    input_image = input_image.transpose(2, 0, 1)
-    input_image = np.expand_dims(input_image, 0)
-
-    return input_image
 
 infer_times_OV = []
 
