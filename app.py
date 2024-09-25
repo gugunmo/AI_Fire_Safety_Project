@@ -33,9 +33,6 @@ source_radio = st.sidebar.radio("Select Source",["IMAGE","VIDEO","WEBCAM"])
 st.sidebar.header("Confidence")
 conf_threshold = float(st.sidebar.slider("Select the Confidence Threshold", 10, 100, 20))/100
 
-st.siderbar.header("Choose Device")
-
-
 input = None
 if source_radio == "IMAGE":
     st.sidebar.header("Upload")
